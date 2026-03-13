@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+:root {
+  --background: #050505; /* Obsidian */
+  --foreground: #ffffff; /* Off-White */
+  --accent: #C5A059;     /* Gold/Brass */
+  --muted: #808080;
+  --border: rgba(197, 160, 89, 0.15);
+  --glass: rgba(5, 5, 5, 0.9);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  cursor: none;
+}
+
+@layer utilities {
+  .font-sans { font-family: var(--font-sans); }
+  .font-mono { font-family: var(--font-mono); }
+  
+  .text-frizz {
+    @apply font-mono uppercase tracking-[0.4em] text-[11px] font-bold opacity-40 hover:opacity-100 transition-opacity duration-500;
+  }
+}
+
+.noise {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0.04;
+  background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+}
+
+/* Glassmorphism Styling */
+.glass-panel {
+  background: var(--glass);
+  backdrop-filter: blur(40px);
+  border: 1px solid var(--border);
+}
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 10px; }
