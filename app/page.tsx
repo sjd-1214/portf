@@ -331,7 +331,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Footer */}
+        {/* Footer ---- */}
       <footer id="contact" className="py-24 md:py-48 text-center border-t border-white/10 relative overflow-hidden">
            <div className="relative z-10">
               <span className="text-frizz text-[var(--accent)] mb-12 block tracking-[0.6em]">Initialize_Handshake</span>
