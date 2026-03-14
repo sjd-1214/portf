@@ -12,7 +12,7 @@ import { Navbar } from "@/components/Navbar";
 import { InfraRadar } from "@/components/InfraRadar";
 import { SystemHUD } from "@/components/SystemHUD";
 
-// --- Custom Hooks ---
+// --- Custom Hooks v1.0 ---
 
 function useMagnetic(strength = 0.4) {
   const ref = useRef<HTMLDivElement>(null);
